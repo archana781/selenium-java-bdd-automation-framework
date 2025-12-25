@@ -1,27 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>qa.framework</groupId>
-  <artifactId>selenium-bdd-framework</artifactId>
+  <groupId>automation</groupId>
+  <artifactId>selenium-framework</artifactId>
   <version>1.0</version>
 
   <dependencies>
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.15.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>io.cucumber</groupId>
-      <artifactId>cucumber-java</artifactId>
-      <version>7.14.0</version>
+      <version>4.19.1</version>
     </dependency>
 
     <dependency>
       <groupId>org.testng</groupId>
       <artifactId>testng</artifactId>
       <version>7.9.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>5.4.0</version>
     </dependency>
   </dependencies>
 </project>
