@@ -1,20 +1,16 @@
-## Selenium Java BDD Automation Framework
-
-This project demonstrates a Selenium-based automation framework using Java and BDD (Cucumber).
+## Selenium Java Automation Framework
 
 ### Tech Stack
 - Java
 - Selenium WebDriver
 - TestNG
-- Cucumber (BDD)
+- REST Assured
 - Maven
 
-### Framework Features
+### Features
 - Page Object Model
-- Hybrid framework approach
-- Reusable test components
-- CI/CD ready (Azure DevOps / Jenkins)
-- Suitable for Banking & Financial applications
+- UI + API automation
+- CI/CD ready framework
+- Suitable for enterprise banking applications
 
-### Author
-Archana Shinde – Senior Automation Engineer
+This repository demonstrates real-world automation framework design used in production projects.
