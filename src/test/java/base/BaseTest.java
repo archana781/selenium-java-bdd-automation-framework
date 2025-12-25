@@ -1,21 +1,22 @@
-package base;
+package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 
-public class BaseTest {
-    protected WebDriver driver;
+public class LoginPage {
+    WebDriver driver;
 
-    @BeforeMethod
-    public void setUp() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+    By username = By.id("username");
+    By password = By.id("password");
+    By loginBtn = By.id("login");
+
+    public LoginPage(WebDriver driver) {
+        this.driver = driver;
     }
 
-    @AfterMethod
-    public void tearDown() {
-        driver.quit();
+    public void login(String user, String pass) {
+        driver.findElement(username).sendKeys(user);
+        driver.findElement(password).sendKeys(pass);
+        driver.findElement(loginBtn).click();
     }
 }
